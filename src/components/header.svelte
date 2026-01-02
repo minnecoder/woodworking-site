@@ -9,8 +9,8 @@
 		<li><a href="/">Home</a></li>
 		<li><a href="/about">About</a></li>
 		<li><a href="/work">Work</a></li>
-		<li><a href="/">Testimonials</a></li>
-		<li><a href="/">Contact</a></li>
+		<li><a href="/testimonials">Testimonials</a></li>
+		<li><a href="/contact">Contact</a></li>
 		<li><a href="/"><Icon src={FaBrandsFacebook} /></a></li>
 		<li><a href="/"><Icon src={FaBrandsEtsy} /></a></li>
 		<li><a href="/"><Icon src={FaBrandsInstagram} /></a></li>
