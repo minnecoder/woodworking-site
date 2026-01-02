@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import '@fontsource-variable/manrope';
 	let { children } = $props();
 </script>
 
@@ -13,7 +14,11 @@
 	:global(body) {
 		padding: 0;
 		margin: 0;
-		font-family: 'Fig Tree', sans-serif;
+		font-family: 'Manrope Variable', sans-serif;
 		font-size: 18px;
 	}
+	/* Ironstone: #865040 
+		Polar:  #f5f5f5 or pure #ffffff
+		Glade Green: #61845F 
+		Pale Slate: #C3BEBB */
 </style>
