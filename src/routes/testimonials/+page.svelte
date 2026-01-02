@@ -3,6 +3,13 @@
 	import Header from '../../components/header.svelte';
 </script>
 
+<svelte:head>
+	<title>Testimonials</title>
+</svelte:head>
+
 <Header />
-Testimonials
+
 <Footer />
+
+<style>
+</style>

@@ -3,6 +3,13 @@
 	import Header from '../../components/header.svelte';
 </script>
 
+<svelte:head>
+	<title>Work</title>
+</svelte:head>
+
 <Header />
-Work
+
 <Footer />
+
+<style>
+</style>

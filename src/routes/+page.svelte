@@ -3,9 +3,13 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 <main>
 	<Header />
-
+	Home page??
 	<div class="test"></div>
 	<Footer />
 </main>
