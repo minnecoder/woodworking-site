@@ -8,15 +8,15 @@
 <footer>
 	<div class="main">
 		<div class="links">
-			<a href="mailto:"><Icon src={AiOutlineMail} color="black" size="32" /></a>
+			<a href="mailto:"><Icon src={AiOutlineMail} color="white" size="32" /></a>
 			<a href="/">
-				<Icon src={FaBrandsEtsy} color="black" size="32" />
+				<Icon src={FaBrandsEtsy} color="white" size="32" />
 			</a>
 			<a href="/">
-				<Icon src={FaBrandsFacebook} color="black" size="32" />
+				<Icon src={FaBrandsFacebook} color="white" size="32" />
 			</a>
 			<a href="/">
-				<Icon src={FaBrandsInstagram} color="black" size="32" />
+				<Icon src={FaBrandsInstagram} color="white" size="32" />
 			</a>
 		</div>
 		&copy; {currentYear} Sean Parkin
@@ -25,11 +25,14 @@
 
 <style>
 	footer {
+		background: #000;
+		color: white;
 		display: flex;
 		justify-content: center;
 		padding: 2rem 0;
 	}
 	.links {
 		padding-bottom: 0.5rem;
+		padding-left: 1rem;
 	}
 </style>
