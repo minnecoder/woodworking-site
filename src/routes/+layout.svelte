@@ -8,15 +8,31 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<div class="container">
+	{@render children()}
+</div>
 
 <style>
+	:global(html),
 	:global(body) {
+		height: 100vh;
+		width: 100vw;
 		padding: 0;
 		margin: 0;
+	}
+
+	:global(body) {
 		font-family: 'Manrope Variable', sans-serif;
 		font-size: 18px;
 	}
+
+	.container {
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
 	/* Ironstone: #865040 
 		Polar:  #f5f5f5 or pure #ffffff
 		Glade Green: #61845F 
