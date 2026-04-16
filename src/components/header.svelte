@@ -16,7 +16,7 @@
 		<li class="social-icons"><a href="/"><Icon src={FaBrandsFacebook} /></a></li>
 		<li class="social-icons"><a href="/"><Icon src={FaBrandsEtsy} /></a></li>
 		<li class="social-icons"><a href="/"><Icon src={FaBrandsInstagram} /></a></li>
-		<li class="social-icons secret"><a href="/login">Secret</a></li>
+		<li class="social-icons secret"><a href="/">Secret</a></li>
 	</div>
 </nav>
 
