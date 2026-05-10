@@ -1,5 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	// @ts-ignore: side-effect import has no type declarations
 	import '@fontsource-variable/manrope';
 	let { children } = $props();
 </script>
@@ -31,6 +32,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	/* Ironstone: #865040 
