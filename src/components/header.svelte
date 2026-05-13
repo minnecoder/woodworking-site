@@ -1,10 +1,11 @@
 <script>
 	import { Icon } from 'svelte-icons-pack';
+	import logo from '$lib/assets/ptc-logo-woodandgreen.jpg';
 	import { FaBrandsEtsy, FaBrandsFacebook, FaBrandsInstagram } from 'svelte-icons-pack/fa';
 </script>
 
 <nav>
-	<a class="logo" href="/">Logo Goes Here!</a>
+	<a class="logo" href="/"><img alt="The project logo" src={logo} /></a>
 	<ul class="links">
 		<li><a href="/">Home</a></li>
 		<li><a href="/about">About</a></li>
@@ -13,9 +14,8 @@
 		<li><a href="/contact">Contact</a></li>
 	</ul>
 	<div class="social-links">
-		<li class="social-icons"><a href="/"><Icon src={FaBrandsFacebook} /></a></li>
-		<li class="social-icons"><a href="/"><Icon src={FaBrandsEtsy} /></a></li>
-		<li class="social-icons"><a href="/"><Icon src={FaBrandsInstagram} /></a></li>
+		<li class="social-icons"><a href="/"><Icon src={FaBrandsFacebook} size=32 /></a></li>
+		<li class="social-icons"><a href="/"><Icon src={FaBrandsInstagram} size=32	 /></a></li>
 		<li class="social-icons secret"><a href="/">Secret</a></li>
 	</div>
 </nav>
@@ -28,6 +28,10 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+	}
+	.logo img {
+		height: 15rem;
+		width: 15rem;
 	}
 	.logo {
 		padding-top: 0.2 5rem;
