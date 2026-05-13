@@ -14,29 +14,13 @@
 </div>
 
 <style>
-	:global(html),
 	:global(body) {
-		height: 100vh;
-		width: 100vw;
-		padding: 0;
-		margin: 0;
-	}
-
-	:global(body) {
+		/* height: 100vh;
+		width: 100vw; */
 		font-family: 'Manrope Variable', sans-serif;
 		font-size: 18px;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden;
 	}
-
-	.container {
-		height: 100vh;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	/* Ironstone: #865040 
-		Polar:  #f5f5f5 or pure #ffffff
-		Glade Green: #61845F 
-		Pale Slate: #C3BEBB */
 </style>
