@@ -20,7 +20,7 @@
 	</section>
 
 	<!-- Featured Work -->
-	<section>
+	<!-- <section>
 		<h2 style="text-align:center; font-size:2.5rem; margin-bottom:2rem;">Recent Work</h2>
 		<div class="portfolio-grid">
 			<div class="portfolio-item">
@@ -55,32 +55,30 @@
 		<div style="text-align:center; margin-top:2rem;">
 			<a href="/portfolio" class="btn">View Full Portfolio</a>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- Why Choose Me -->
 	<section class="features">
 		<h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; grid-column:1 / -1;">
 			Why Work With Me
 		</h2>
-		<div>
-			<div class="feature-icon">🌳</div>
-			<h3>Locally Sourced Hardwoods</h3>
-			<p>Walnut, cherry, oak & maple from Minnesota & Midwest sources whenever possible.</p>
-		</div>
-		<div>
-			<div class="feature-icon">🔨</div>
-			<h3>Honest Joinery</h3>
-			<p>Hand-cut dovetails, mortise & tenon — built to last generations.</p>
-		</div>
-		<div>
-			<div class="feature-icon">♻️</div>
-			<h3>Heirloom Quality</h3>
-			<p>Finishes that age beautifully — no cheap shortcuts or particle board.</p>
-		</div>
-		<div>
-			<div class="feature-icon">🏠</div>
-			<h3>Made in Elk River</h3>
-			<p>Everything crafted in my small Minnesota shop, one piece at a time.</p>
+		<div class="reasons">
+			<div>
+				<div class="feature-icon">🌳</div>
+				<h3>Locally Sourced Hardwoods</h3>
+				<p>Walnut, cherry, oak & maple from Minnesota & Midwest sources whenever possible.</p>
+			</div>
+
+			<div>
+				<div class="feature-icon">♻️</div>
+				<h3>Heirloom Quality</h3>
+				<p>Finishes that age beautifully — no cheap shortcuts or particle board.</p>
+			</div>
+			<div>
+				<div class="feature-icon">🏠</div>
+				<h3>Made in Elk River</h3>
+				<p>Everything crafted in my small Minnesota shop, one piece at a time.</p>
+			</div>
 		</div>
 	</section>
 
@@ -100,6 +98,12 @@
 </main>
 
 <style>
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
 	.btn {
 		display: inline-block;
 		background: #8b5a2b;
@@ -148,9 +152,13 @@
 		text-align: center;
 	}
 	.features {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.reasons {
+		display: flex;
 		text-align: center;
 	}
 	.feature-icon {
