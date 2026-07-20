@@ -1,6 +1,6 @@
 <script>
 	import { Icon } from 'svelte-icons-pack';
-	import logo from '$lib/assets/ptc-logo-woodandgreen.jpg';
+	import logo from '$lib/assets/ptc-logo-nobg2.png';
 	import { FaBrandsEtsy, FaBrandsFacebook, FaBrandsInstagram } from 'svelte-icons-pack/fa';
 </script>
 
@@ -22,16 +22,19 @@
 
 <style>
 	nav {
-		margin: 0 1rem;
+		/* margin: 0 1rem; */
+		padding: .5rem 0;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+		background: #f0f0f0;
 	}
 	.logo img {
-		height: 15rem;
-		width: 15rem;
+		height: 4rem;
+		width: 6rem;
+		aspect-ratio: 1/1;
 	}
 	.logo {
 		padding-top: 0.2 5rem;
