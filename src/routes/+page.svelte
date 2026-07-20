@@ -102,7 +102,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100vh;
+	/* height: 100vh; */
 }
 	.btn {
 		display: inline-block;
@@ -122,13 +122,16 @@ main {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
-	.intro {
+	 .intro {
+		padding-top: 6rem;
 		text-align: center;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		max-width: 800px;
 		margin: 0 auto;
+	
+		
 	}
-	.portfolio-grid {
+	/* .portfolio-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 2rem;
@@ -150,7 +153,7 @@ main {
 		margin: 0;
 		font-weight: bold;
 		text-align: center;
-	}
+	} */
 	.features {
 		display: flex;
 		flex-direction: column;
