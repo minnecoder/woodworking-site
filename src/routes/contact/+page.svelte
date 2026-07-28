@@ -1,6 +1,5 @@
 <script lang="ts">
- import Footer from '../../components/footer.svelte';
-    import Header from '../../components/header.svelte';
+ 
     import { enhance } from '$app/forms';
     
     // This will be populated by SvelteKit after form submission
@@ -21,7 +20,7 @@
     <title>Contact Us</title>
 </svelte:head>
 
-<Header />
+
 <div class="main">
     <h2>Contact Us</h2>
 	{#if form?.success}
@@ -55,7 +54,7 @@
         </form>
     </div>
 </div>
-<Footer />
+
 
 <style>
     .main {

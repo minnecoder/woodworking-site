@@ -1,14 +1,10 @@
-<script>
-	import Header from '../components/header.svelte';
-	import Footer from '../components/footer.svelte';
-</script>
 
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
 <main>
-	<Header />
+
 
 	<!-- Quick Intro -->
 	<section class="intro">
@@ -94,7 +90,7 @@
 		>
 	</section>
 
-	<Footer />
+	
 </main>
 
 <style>

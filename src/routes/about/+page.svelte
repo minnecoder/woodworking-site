@@ -1,13 +1,10 @@
-<script>
-	import Footer from '../../components/footer.svelte';
-	import Header from '../../components/header.svelte';
-</script>
+
 
 <svelte:head>
 	<title>About</title>
 </svelte:head>
 
-<Header />
+
 <!-- Core Elements to Include (in roughly this order)
 
 A strong, personal opening sentence or short paragraph
@@ -83,7 +80,7 @@ Quick Template You Can Adapt Right Now  -->
 </div>
 <!-- Keep it 300–600 words max. Write like you're telling a friend over a beer, not writing a corporate bio. Readers can smell "marketing speak" from a mile away.
 What direction are you going with the site — mostly commissions, selling ready pieces, tutorials/blog, or a mix? That can help fine-tune the tone even more. -->
-<Footer />
+
 
 <style>
 	:global(body) {
