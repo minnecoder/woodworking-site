@@ -1,6 +1,6 @@
 <script>
 	import { Icon } from 'svelte-icons-pack';
-	import logo from '$lib/assets/ptc-logo-nobg2.png';
+	import logo from '$lib/assets/PTClogo-nobg.png';
 	import { FaBrandsEtsy, FaBrandsFacebook, FaBrandsInstagram } from 'svelte-icons-pack/fa';
 </script>
 
@@ -14,8 +14,8 @@
 		<li><a href="/contact">Contact</a></li>
 	</ul>
 	<div class="social-links">
-		<li class="social-icons"><a href="/"><Icon src={FaBrandsFacebook} size=32 /></a></li>
-		<li class="social-icons"><a href="/"><Icon src={FaBrandsInstagram} size=32	 /></a></li>
+		<li class="social-icons"><a href="https://www.facebook.com/profile.php?id=61592223347176"><Icon src={FaBrandsFacebook} size=32 /></a></li>
+		<li class="social-icons"><a href="https://www.instagram.com/parkintimbercrafts/"><Icon src={FaBrandsInstagram} size=32	 /></a></li>
 		<li class="social-icons secret"><a href="/">Secret</a></li>
 	</div>
 </nav>
@@ -23,7 +23,7 @@
 <style>
 	nav {
 		/* margin: 0 1rem; */
-		padding: .5rem 0;
+		/* padding: .5rem 0; */
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -32,8 +32,8 @@
 		background: #f0f0f0;
 	}
 	.logo img {
-		height: 4rem;
-		width: 6rem;
+		height: 5rem;
+		width: 5.5rem;
 		aspect-ratio: 1/1;
 	}
 	.logo {
