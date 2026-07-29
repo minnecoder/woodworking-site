@@ -8,11 +8,11 @@
 <footer>
 	<div class="main">
 		<div class="links">
-			<a href="mailto:"><Icon src={AiOutlineMail} color="white" size="32" /></a>
-			<a href="/">
+			<a href="mailto:parkintimbercrafts@protonmail.com"><Icon src={AiOutlineMail} color="white" size="32" /></a>
+			<a href="https://www.facebook.com/profile.php?id=61592223347176">
 				<Icon src={FaBrandsFacebook} color="white" size="32" />
 			</a>
-			<a href="/">
+			<a href="https://www.instagram.com/parkintimbercrafts/">
 				<Icon src={FaBrandsInstagram} color="white" size="32" />
 			</a>
 		</div>
