@@ -37,7 +37,7 @@
 		aspect-ratio: 1/1;
 	}
 	.logo {
-		padding-top: 0.2 5rem;
+		padding-top: 0.25rem;
 		text-decoration: none;
 		color: #000;
 	}
