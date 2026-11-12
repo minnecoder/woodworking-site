@@ -2,17 +2,20 @@
 	import { enhance } from '$app/forms';
 
 	// This will be populated by SvelteKit after form submission
-	let { form } = $props<{
-		form?: {
-			success?: boolean;
-			error?: string;
-			firstName?: string;
-			lastName?: string;
-			email?: string;
-			subject?: string;
+	type ContactForm = {
+		success?: boolean;
+		error?: string;
+		firstName?: string;
+		lastName?: string;
+		email?: string;
+		subject?: string;
+		message?: string;
+		errors?: {
 			message?: string;
 		};
-	}>();
+	};
+
+	export let form: ContactForm | undefined = undefined;
 </script>
 
 <svelte:head>
@@ -27,8 +30,8 @@
 		<p class="error">❌ {form.error}</p>
 	{/if}
 	<p>
-		Email us directly to <a class="email-link" href="mailto:sean@parkintimbercrafts.com"
-			>sean@parkintimbercrafts.com</a
+		Email us directly to <a class="email-link" href="mailto:parkintimbercrafts@protonmail.com"
+			>parkintimbercrafts@protonmail.com</a
 		> or fill out the form below and we will be in touch.
 	</p>
 
