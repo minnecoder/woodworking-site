@@ -1,8 +1,8 @@
 import { Resend } from 'resend';
-import { RESEND_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { fail } from '@sveltejs/kit';
 
-const resend = new Resend(RESEND_API_KEY);
+const resend = new Resend(env.RESEND_API_KEY);
 
 export const actions = {
     default: async ({ request }) => {
@@ -30,8 +30,8 @@ export const actions = {
 
         try {
             const { error } = await resend.emails.send({
-                from: 'Contact Form <sean@parkintimbercrafts.com>',   // Must be from your verified domain in Resend
-                to: ['sean@parkintimbercrafts.com'],                     // Your receiving email
+                from: 'Contact Form <info@parkintimbercrafts.com>',   // Must be from your verified domain in Resend
+                to: ['info@parkintimbercrafts.com'],                     // Your receiving email
                 replyTo: email,                                  // So you can reply directly
                 subject: `New Contact Form Message from ${firstName} ${lastName}}`,
                 html: `
