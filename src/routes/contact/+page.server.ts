@@ -31,7 +31,7 @@ export const actions = {
         try {
             const { error } = await resend.emails.send({
                 from: 'Contact Form <info@parkintimbercrafts.com>',   // Must be from your verified domain in Resend
-                to: ['info@parkintimbercrafts.com'],                     // Your receiving email
+                to: ['parkintimbercrafts@protonmail.com'],              // Your receiving email
                 replyTo: email,                                  // So you can reply directly
                 subject: `New Contact Form Message from ${firstName} ${lastName}}`,
                 html: `
