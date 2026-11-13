@@ -2,8 +2,6 @@ import { Resend } from 'resend';
 import { env } from '$env/dynamic/private';
 import { fail } from '@sveltejs/kit';
 
-const resend = new Resend(env.RESEND_API_KEY);
-
 export const actions = {
     default: async ({ request }) => {
         const formData = await request.formData();
@@ -28,7 +26,13 @@ export const actions = {
             console.log('Form data is valid. Proceeding to send email...');
         }
 
+        if (!env.RESEND_API_KEY) {
+            console.error('RESEND_API_KEY is not configured');
+            return fail(500, { error: 'Email service is not configured. Please try again later.' });
+        }
+
         try {
+            const resend = new Resend(env.RESEND_API_KEY);
             const { error } = await resend.emails.send({
                 from: 'Contact Form <info@parkintimbercrafts.com>',   // Must be from your verified domain in Resend
                 to: ['parkintimbercrafts@protonmail.com'],              // Your receiving email
