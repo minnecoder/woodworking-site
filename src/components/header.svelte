@@ -31,6 +31,16 @@
 		align-items: center;
 		background: #f0f0f0;
 	}
+
+@media (max-width: 650px) {
+	
+		.logo img {
+			height: 3rem;
+			width: 3.5rem;
+		}
+	}
+
+
 	.logo img {
 		height: 5rem;
 		width: 5.5rem;
