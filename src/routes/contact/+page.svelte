@@ -103,10 +103,10 @@
 		box-sizing: border-box;
 	}
 
-    @media (max-width: 1000px) {
+	@media (max-width: 1000px) {
 		.name {
 			flex-direction: column;
-          width: 90%;
+			width: 90%;
 		}
 	}
 
@@ -114,7 +114,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-        margin: 1rem 1rem 0 1rem;
+		margin: 1rem 1rem 0 1rem;
 	}
 
 	form h3 {
@@ -130,7 +130,6 @@
 		font: inherit;
 		border: 1px solid #ccc;
 		box-sizing: border-box;
-        
 	}
 
 	form textarea {
@@ -147,6 +146,15 @@
 		margin: 1rem;
 		display: flex;
 		flex-direction: column;
+	}
+
+	@media (max-width: 650px) {
+	
+		.contact-form button {
+			padding: 0.5rem 1rem;
+			margin-right: 10rem;
+			margin-bottom: 1rem;
+		}
 	}
 
 	form button {
@@ -185,5 +193,4 @@
 		border: 1px solid #f5c6cb;
 		text-align: center;
 	}
-    	
 </style>
