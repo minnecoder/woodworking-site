@@ -34,9 +34,8 @@
 
 @media (max-width: 650px) {
 	
-		.logo img {
-			height: 3rem;
-			width: 3.5rem;
+		.links{
+			padding: 0;
 		}
 	}
 
